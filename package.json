@@ -19,5 +19,14 @@
   "bugs": {
     "url": "https://github.com/pranav9056/frontend-nanodegree-mobile-portfolio/issues"
   },
-  "homepage": "https://github.com/pranav9056/frontend-nanodegree-mobile-portfolio#readme"
+  "homepage": "https://github.com/pranav9056/frontend-nanodegree-mobile-portfolio#readme",
+  "devDependencies": {
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-htmlmin": "^2.4.0",
+    "grunt-contrib-uglify": "^3.3.0",
+    "load-grunt-tasks": "^3.5.2"
+  },
+  "dependencies": {
+    "grunt": "^1.0.2"
+  }
 }

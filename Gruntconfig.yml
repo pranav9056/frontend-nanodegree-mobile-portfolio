@@ -1,0 +1,17 @@
+cssDir: src/css/
+cssViewDir: src/views/css/
+
+mincssDir: dist/css/
+mincssViewDir: dist/views/css/
+
+srcDir: src/
+distDir: dist/
+
+srcViewDir: src/views
+distViewDir: dist/views
+
+jsDir: src/js
+jsViewDir: src/views/js
+
+minjsDir: dist/js
+minjsViewDir: dist/views/js
