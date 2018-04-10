@@ -15,3 +15,9 @@ jsViewDir: src/views/js
 
 minjsDir: dist/js
 minjsViewDir: dist/views/js
+
+imgDir: src/img
+imgDestDir: dist/img
+
+imgViewDir: src/views/images
+imgDestViewDir: dist/views/images
