@@ -2,32 +2,37 @@
 
 
 ### Getting started
-This  Project uses Grunt as a task runner, To run clone this repository and run "npm install" to install the necessary packages. If you are not familiar with grunt, you can read more about it [here](https://gruntjs.com/getting-started)
+
+This project is divided into two folders:
+src - This folder contains the source code
+dist - This folder contains the production code and contains a post task runner version of the source code
+
+
+#### Installing the Project
+1. Clone the repository
+2. This Project uses Grunt as a task runner,If you are not familiar with grunt, you can read more about it [here](https://gruntjs.com/getting-started). Make sure you have grunt-cli and npm installed
+3. Run 'npm install' and all the dependencies will get downloaded
+4. use 'grunt' to run the task runner.
+5. To serve your files you may use http-server from Node in the following way
+  - Run npm install -g http-server.
+  - Serve files with http-server ~/Documents/mysite -p 8000 (replace ~/Documents/mysite with the path to your project's directory!).
+  - Navigate your browser to http://localhost:8000 to test!
+
+
 
 
 #### Part 1: Optimize PageSpeed Insights score for index.html
 
-Some useful tips to help you get started:
+This project is hosted on github pages, and this URL - http://pranavjain.info/frontend-nanodegree-mobile-portfolio/dist/index.html
+can be used to find out the PageSpeed wpL3FuNA41GYXx7Sfljw5cPOrGAbEl3JHUp5dW
 
-1. Check out the repository
-1. To inspect the site on your phone, you can run a local server
+Optimizations Done:
 
-  ```bash
-  $> cd /path/to/your-project-folder
-  $> python -m SimpleHTTPServer 8080
-  ```
+1. Minification of HTML,CSS and JS - All the resourcses were minified using the following tasks from grunt (htmlmin,cssmin and uglify)
+2. Image resources were compressed so that they can be downloaded quickly
+3. CSS was inlined using a grunt task as external CSS is a render blocking resource
 
-1. Open a browser and visit localhost:8080
-1. Download and install [ngrok](https://ngrok.com/) to the top-level of your project directory to make your local server accessible remotely.
 
-  ``` bash
-  $> cd /path/to/your-project-folder
-  $> ./ngrok http 8080
-  ```
-
-1. Copy the public URL ngrok gives you and try running it through PageSpeed Insights! Optional: [More on integrating ngrok, Grunt and PageSpeed.](http://www.jamescryer.com/2014/06/12/grunt-pagespeed-and-ngrok-locally-testing/)
-
-Profile, optimize, measure... and then lather, rinse, and repeat. Good luck!
 
 #### Part 2: Optimize Frames per Second in pizza.html
 
