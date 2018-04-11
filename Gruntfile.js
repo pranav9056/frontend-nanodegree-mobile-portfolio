@@ -87,6 +87,15 @@ module.exports = function(grunt) {
         }]
       }
     },
+    inlinecss: {
+        main: {
+            options: {
+            },
+            files: {
+              'dist/index.html':'dist/index.html'
+            }
+        }
+    }
 
   });
 
@@ -96,6 +105,7 @@ module.exports = function(grunt) {
     'htmlmin',
     'uglify',
     'copy',
+    'inlinecss'
   ]);
 
 };
