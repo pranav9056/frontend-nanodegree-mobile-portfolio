@@ -3,7 +3,7 @@
 
 ### Getting started
 
-This project is divided into two folders: 
+This project is divided into two folders:
 1. src - This folder contains the source code
 2. dist - This folder contains the production code and contains a post task runner version of the source code
 
@@ -36,8 +36,9 @@ Optimizations Done:
 
 #### Part 2: Optimize Frames per Second in pizza.html
 
-1. Prevented layout trashing in the updatePositions functions by moving scrollTop outside the loop (line 506 main.js)
-2. Modified the way pizzas were being resized, got rid of determineDx. Now for each pizza a size is returned and the width is mentioned in a percentage. sizeSwitcher is called just once to determine the new width (line 441 main.js) 
+1. Prevented layout trashing in the updatePositions functions by moving scrollTop and phase calculation outside the loop (line 506 main.js)
+2. Modified the way pizzas were being resized, got rid of determineDx. Now for each pizza a size is returned and the width is mentioned in a percentage. sizeSwitcher is called just once to determine the new width (line 441 main.js)
+3. Modified the number of sliding pizzas to be dynamically assigned as a function of row and height of the window (line 523 main.js)
 
 ### Optimization Tips and Tricks
 * [Optimizing Performance](https://developers.google.com/web/fundamentals/performance/ "web performance")
