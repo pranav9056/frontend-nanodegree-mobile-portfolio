@@ -3,9 +3,9 @@
 
 ### Getting started
 
-This project is divided into two folders:
-src - This folder contains the source code
-dist - This folder contains the production code and contains a post task runner version of the source code
+This project is divided into two folders: 
+1. src - This folder contains the source code
+2. dist - This folder contains the production code and contains a post task runner version of the source code
 
 
 #### Installing the Project
@@ -14,9 +14,9 @@ dist - This folder contains the production code and contains a post task runner 
 3. Run 'npm install' and all the dependencies will get downloaded
 4. use 'grunt' to run the task runner.
 5. To serve your files you may use http-server from Node in the following way
-  -... Run npm install -g http-server.
-  -... Serve files with http-server ~/Documents/mysite -p 8000 (replace ~/Documents/mysite with the path to your project's directory!).
-  -... Navigate your browser to http://localhost:8000 to test!
+    - Run npm install -g http-server.
+    - Serve files with http-server ~/Documents/mysite -p 8000 (replace ~/Documents/mysite with the path to your project's directory!).
+    - Navigate your browser to http://localhost:8000 to test!
 
 
 
