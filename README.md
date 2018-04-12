@@ -14,9 +14,9 @@ dist - This folder contains the production code and contains a post task runner 
 3. Run 'npm install' and all the dependencies will get downloaded
 4. use 'grunt' to run the task runner.
 5. To serve your files you may use http-server from Node in the following way
-  - Run npm install -g http-server.
-  - Serve files with http-server ~/Documents/mysite -p 8000 (replace ~/Documents/mysite with the path to your project's directory!).
-  - Navigate your browser to http://localhost:8000 to test!
+  -... Run npm install -g http-server.
+  -... Serve files with http-server ~/Documents/mysite -p 8000 (replace ~/Documents/mysite with the path to your project's directory!).
+  -... Navigate your browser to http://localhost:8000 to test!
 
 
 
@@ -24,7 +24,7 @@ dist - This folder contains the production code and contains a post task runner 
 #### Part 1: Optimize PageSpeed Insights score for index.html
 
 This project is hosted on github pages, and this URL - http://pranavjain.info/frontend-nanodegree-mobile-portfolio/dist/index.html
-can be used to find out the PageSpeed wpL3FuNA41GYXx7Sfljw5cPOrGAbEl3JHUp5dW
+can be used to find out the PageSpeed score
 
 Optimizations Done:
 
@@ -36,9 +36,8 @@ Optimizations Done:
 
 #### Part 2: Optimize Frames per Second in pizza.html
 
-To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js.
-
-You might find the FPS Counter/HUD Display useful in Chrome developer tools described here: [Chrome Dev Tools tips-and-tricks](https://developer.chrome.com/devtools/docs/tips-and-tricks).
+1. Prevented layout trashing in the updatePositions functions by moving scrollTop outside the loop (line 506 main.js)
+2. Modified the way pizzas were being resized, got rid of determineDx. Now for each pizza a size is returned and the width is mentioned in a percentage. sizeSwitcher is called just once to determine the new width (line 441 main.js) 
 
 ### Optimization Tips and Tricks
 * [Optimizing Performance](https://developers.google.com/web/fundamentals/performance/ "web performance")
